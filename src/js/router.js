@@ -1,7 +1,8 @@
-//this three import is our pages
-import mainPage from './pages/main.js';
-import netPage from './pages/net.js';
-import personnelPage from './pages/personnel.js';
+//this imports are our pages
+import mainPage from './pages/Main.js';
+import netPage from './pages/Net.js';
+import personnelPage from './pages/Personnel.js';
+import salePage from './pages/Sale.js';
 import notFound from './pages/404.js';
 //this is where we want show the pages of each route
 const mainSection=document.querySelector(".main")
@@ -11,6 +12,7 @@ const routes=[
     {path:"/public/index.html",view:mainPage()},
     {path:"/public/index.html/personnel",view:personnelPage()},
     {path:"/public/index.html/net",view:netPage()},
+    {path:"/public/index.html/sale",view:salePage()},
 ];
 
 //make a Router class
@@ -24,7 +26,8 @@ class Router{
         }else{
        return item.isMatch=false
     } 
-       }) ;   
+       }) ; 
+       console.log(routes)  
        //based on the routes array decision to show which page
        let selectedRoute=routes.find(route=>route.isMatch==true);
        if(!selectedRoute){
