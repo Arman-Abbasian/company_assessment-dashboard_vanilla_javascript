@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/output.css" />
+
 </head>
-<body>
-    <div class="flex flex-col justify-center items-center">
-        <h1>SISAKO company</h1>
-        <h2>Assessment dashboard </h2>
+<body >
+    <div class="grid gird-cols-1 justify-center items-center bg-blackDark text-whiteDark">
+        <div class="grid grid-cols-1">
+            <canvas id="MTBFBarChart"></canvas>
+            <canvas id="MTTRBarChart"></canvas>
+            <canvas id="OEEBarChart"></canvas>
+            <canvas id="usageLineChart"></canvas>
+            <canvas id="wholeBreakingTimeLineChart"></canvas>
+            <canvas id="valueProducedBarChart"></canvas>
+        </div>
+        
     </div>
-    <div class="grid gird-cols-1 justify-center items-center">
-        <div>net</div>
-        <div>sale</div>
-        <div>storage</div>
-        <div>personnel</div>
-    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../src/js/charts/net/MTBF.js"></script>
+    <script src="../src/js/charts/net/MTTR.js"></script>
+    <script src="../src/js/charts/net/OEE.js"></script>
+    <script src="../src/js/charts/net/usagePercent.js"></script>
+    <script src="../src/js/charts/net/valueProduced.js"></script>
+    <script src="../src/js/charts/net/wholeBreakingTime.js"></script>
+
 </body>
 </html>
