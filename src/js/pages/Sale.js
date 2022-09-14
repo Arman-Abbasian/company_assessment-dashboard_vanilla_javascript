@@ -1,6 +1,7 @@
-const  salePage=()=>{
-    return `
-    <div>sale page </div>
-    `
-    }
-    export default salePage;
+  class SalePage{
+    constructor(){
+    `<div>sale page </div>`
+}
+    
+}
+export default new SalePage();

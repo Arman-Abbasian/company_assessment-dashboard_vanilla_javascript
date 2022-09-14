@@ -17,15 +17,15 @@
                <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm" href="/public/index.html/sale"><li>sale</li></a>
             </ul>
         </aside>
-        <div x-data="{ open: false }" class="fixed top-2 left-2 z-10">
+        <div x-data="{ open: false }" class="fixed top-2 left-2 z-10 flex gap-2 justify-start items-center w-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 p-1 shadow-md shadow-black drop-shadow-sm cursor-pointer rounded-sm" x-on:click="open = ! open">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-              </svg>
-              <ul class="flex flex-col justify-start items-start w-full  shadow-black drop-shadow-md cursor-pointer rounded-sm bg-grayDark" x-show="open">
-               <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm" href="/public/index.html"><li>main</li></a>
-               <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm" href="/public/index.html/personnel"> <li>personnel</li></a>
-               <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm" href="/public/index.html/net"><li>net</li></a>
-               <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm" href="/public/index.html/sale"><li>sale</li></a>
+            </svg>
+            <ul class="flex justify-between items-center w-full  shadow-md shadow-black drop-shadow-sm cursor-pointer rounded-sm flex-1" x-show="open">
+                <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm flex items-center justify-center" href="/public/index.html"><li>main</li></a>
+                <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm flex items-center justify-center" href="/public/index.html/personnel"> <li>personnel</li></a>
+                <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm flex items-center justify-center" href="/public/index.html/net"><li>net</li></a>
+                <a class="link w-full p-1 hover:bg-lime-300 hover:rounded-sm flex items-center justify-center" href="/public/index.html/sale"><li>sale</li></a>
             </ul>
         </div>
         <main class="main col-span-6 md:col-span-5 bg-blackDark flex items-center justify-center"></main>

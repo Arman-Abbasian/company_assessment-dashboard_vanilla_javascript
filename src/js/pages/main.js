@@ -1,6 +1,5 @@
- const  mainPage=()=>{
-return `
-<div>main page </div>
-`
+const  mainPage=()=>{
+const main=document.querySelector(".main");
+main.innerHTML=`div>main page </div>`
 }
 export default mainPage;
